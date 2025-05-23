@@ -7,6 +7,14 @@ import sys
 import shutil
 from pathlib import Path
 
+# 设置模型路径和离线模式
+os.environ["SENTENCE_TRANSFORMERS_HOME"] = "/data/localssd/workspace/GMM_LLM/models"
+os.environ["OFFLINE_MODE"] = "true"
+os.environ["HF_HOME"] = "/data/localssd/workspace/GMM_LLM/models"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_CACHE"] = "/data/localssd/workspace/GMM_LLM/models"
+
 import markdown
 from bs4 import BeautifulSoup
 from open_webui.constants import ERROR_MESSAGES
