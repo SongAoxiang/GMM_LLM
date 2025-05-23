@@ -38,7 +38,16 @@
 		TOOLS_FUNCTION_CALLING_PROMPT_TEMPLATE: ''
 	};
 
-	let promptSuggestions = [];
+	let promptSuggestions = [
+		{
+    title: ['标题1', '副标题1'],  // 可选
+    content: '建议内容1'
+  },
+  {
+    title: ['标题2', '副标题2'],
+    content: '建议内容2'
+  }
+	];
 	let banners: Banner[] = [];
 
 	const updateInterfaceHandler = async () => {
